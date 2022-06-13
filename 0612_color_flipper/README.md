@@ -5,8 +5,13 @@ Code cloned from [github](https://github.com/john-smilga/javascript-basic-projec
 
 ## What I learned
 - Document methods:
-  - getElementById: get an element whose id property matches the specified string
-  - querySelector: returns first element within the document that matches the selector 
+  - <code>getElementById</code>: get an element whose id property matches the specified string
+  - <code>querySelector</code>: returns first element within the document that matches the selector 
     - class -> "."
     - id -> "#"
 
+- Document properties:
+  - body
+
+- Node
+  - <code>textContent</code>: sets or returns the text content of the specified node, and all its descendants.
