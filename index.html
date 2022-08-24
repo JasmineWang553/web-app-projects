@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tracker</title>
+</head>
+<body>
+    <div class="container">
+        <table class = "tracker">
+            <thead>
+                <!-- <tr></tr> -->
+                <td class = "input input-item">Item</td>
+                <td class = "input input-date">Date</td>
+                <td class = "input input-amt">Amount</td>
+                <td class = "input input-desc">Description</td>
+                <td class="col-delete"></td>
+                
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="input-item">1</td>
+                    <td><input class = "input-date" type="date" name = "date"></td>
+                    <td><input class = "input-amt" type="number" name = "amt" placeholder = "0.00"></td>
+                    <td><input class = "input-desc" type="text" name = "desc" placeholder = "Describe Expense/Income"></td>
+                    <td><button type = "button" class = "delete-entry">Delete</button></td>
+                </tr>
+            </tbody>
+            
+        </table>
+    
+        <div class="foot">
+            <div class="add-entry">
+                Add
+            </div>
+            <div class="total-amt">
+                Total: $ 0.00
+            </div>
+        </div>
+    </div>
+</body>
+</html>
