@@ -4,6 +4,8 @@ var table = document.querySelector('tbody')
 var itemCounter = 0
 
 //functions
+
+/////////////////// basic add and del ///////////////////
 function addRow(){ // if already empty row no add new row
     itemCounter++;
 
@@ -31,6 +33,25 @@ function deleteRow(event){
     }
     itemCounter--;
 }
+
+/////////////////// Logging into table ///////////////////
+// function insertRowValues(){
+
+// }
+
+// function checkAllEntriesFilled(){
+    
+// }
+
+/////////////////// Adjust Total Amount ///////////////////
+// function checkIfNumber(){
+
+// }
+
+// function adjustTotalAmount(){
+
+// }
+
 
 //Events
 addBtn.addEventListener("click", addRow);
