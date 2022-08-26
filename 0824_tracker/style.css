@@ -10,7 +10,6 @@ html{
 
 .tracker{
     width: 75%;
-    /* margin-top: 10vh; */
     justify-content: center;
     border: 0.5px solid grey;
     padding: 5px;
@@ -25,10 +24,9 @@ thead{
 
 td {
     padding: 3px 5px;
-    
 }
 
-input{
+input, select{
     border-radius: 3px;
     border: 0.5px solid #bbb;
     padding: 3px 5px;
@@ -82,7 +80,15 @@ input{
     cursor: pointer;
 }
 
-.total-amt{
+#total-amt{
     margin-top: 5vh;
+    text-align: right;
+}
+
+.value{
+    padding: 3px 5px;
+}
+
+.value.input-amt{
     text-align: right;
 }
