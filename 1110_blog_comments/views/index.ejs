@@ -1,0 +1,23 @@
+<%- include('partials/header',{title:"All Comments"}) %>
+
+<body>
+    <div id="index-title-container"> 
+        <h1>All Comments</h1> <a class = "btn btn-primary" href="/comments/post">New Post </a>
+    </div>
+    
+    <div class="card-columns">
+        <%for (let comment of comments){%>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title"><%=comment.username%></h5>
+                    <p class="card-text"><%=comment.comment%></p>
+                    <p class="card-text"><input type="button" class = "btn btn-info details" value="Details" onclick="location.href='/comments/<%=comment.id%>';"></p>
+                </div>
+            </div>
+        <%}%>
+    </div>
+    <%- include('partials/footer') %>
+</body>
+
+
+</html>
