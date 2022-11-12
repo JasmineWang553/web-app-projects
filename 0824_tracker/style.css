@@ -1,0 +1,94 @@
+html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap ;
+}
+
+.tracker{
+    width: 75%;
+    justify-content: center;
+    border: 0.5px solid grey;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 10vh auto 0 auto;
+}
+
+thead{
+    background-color: rgb(43, 101, 226);
+    color: white;
+}
+
+td {
+    padding: 3px 5px;
+}
+
+input, select{
+    border-radius: 3px;
+    border: 0.5px solid #bbb;
+    padding: 3px 5px;
+}
+
+.input-item{
+    text-align: center;
+}
+
+.col-delete{
+    width: 50px;
+    /* background-color: green; */
+}
+
+.delete-entry{
+    background-color: rgb(223, 55, 13);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 3px 10px;
+}
+
+.delete-entry:hover{
+    background-color: rgb(139, 37, 12);
+    color: white;
+    cursor: pointer;
+}
+
+.foot{
+    padding-top: 2vh;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#add-entry{
+    background-color: rgb(13, 223, 83);
+    color: white;
+    border: 0;
+    border-radius: 8px;
+    padding: 3px 5px;
+    text-align: right;
+    width: fit-content;
+    float: right;
+    padding: 3px 10px;
+    
+    
+}
+#add-entry:hover{
+    background-color: rgb(24, 136, 14);
+    color: white;
+    cursor: pointer;
+}
+
+#total-amt{
+    margin-top: 5vh;
+    text-align: right;
+}
+
+.value{
+    padding: 3px 5px;
+}
+
+.value.input-amt{
+    text-align: right;
+}

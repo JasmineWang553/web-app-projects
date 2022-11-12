@@ -1,0 +1,37 @@
+.navbar {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.card-columns,
+#index-title-container,
+.container {
+    width: 65%;
+    margin: 3em auto;
+}
+
+#index-title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    transition: transform 0.8s;
+}
+
+.card-columns>.card:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+    nav {
+        width: 100%;
+    }
+
+    #comments-container {
+        flex-wrap: wrap;
+    }
+
+}

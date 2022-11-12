@@ -1,0 +1,46 @@
+<%- include('partials/header',{title:"New Comment"}) %>
+
+<body>
+    <div class="container">
+        <h1>New Post</h1>
+        <!-- <form action="/comments/post" method="post">
+            <div>
+                <label for = "username" >Username:</label>
+                <input id = username type="text" name = "username">
+            </div>
+
+            
+
+            <br>
+            <div>
+                <label for = "content" >Content:</label>
+                <div class="col-sm-2">
+                    <textarea class= "form-control" name="content" rows="4"></textarea>
+                </div>
+            </div>
+            <br>
+        </form> -->
+        <br>
+        <form action="/comments/post" method="post">
+            <div class="form-group">
+              <label for="username" class = "font-weight-bold">Username: </label>
+              <input type="text" class="form-control col-sm-6" id="username" placeholder="Username" name="username">
+            </div>
+            
+            <div class="form-group">
+              <label for="content" class = "font-weight-bold">Comment: </label>
+              <textarea class="form-control col-sm-6" id="content" rows="5" name="content"></textarea>
+            </div>
+            <button class = "btn btn-primary" type="submit">Save</button>
+            <form action="/comments" method = "get">
+                <button class = "btn btn-primary" type="submit">Back to Comments</button>
+            </form>
+          </form>
+
+        
+        
+        
+    </div>
+    <%- include('partials/footer') %>
+</body>
+</html>
