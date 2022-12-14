@@ -1,0 +1,10 @@
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.card-list-container {
+  margin: 0 3%;
+}
