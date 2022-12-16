@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>My Flask App</title>
+</head>
+<body>
+    <div id = "tables-container">
+        <h1>Stores</h1>
+        <table id = "store-table">
+            <thead>
+                <tr>
+                    <td>Store ID</td>
+                    <td>Store Name</td>
+                </tr>
+            </thead>
+            
+            <tbody>
+            {%for store in stores%}
+                <tr>
+                    <td>{{store['id']}}</td>
+                    <td>{{store['name']}}</td>
+                </tr>
+            {%endfor%}
+            </tbody>
+        </table>
+        
+
+        <h1>Items</h1>
+        <table id = "item-table">
+            <thead>
+                <tr>
+                    <td>Item Id</td>
+                    <td>Item Name</td>
+                    <td>Price</td>
+                    <td>Store ID</td>
+                </tr>
+            </thead>
+
+            <tbody>
+            {%for item in items%}
+                <tr>
+                    <td>{{item['id']}}</td>
+                    <td>{{item['name']}}</td>
+                    <td>$ {{item['price']}}</td>
+                    <td>{{item['store_id']}}</td>
+                </tr>
+            {%endfor%} 
+            </tbody> 
+        </table>
+    </div>
+</body>
+</html>

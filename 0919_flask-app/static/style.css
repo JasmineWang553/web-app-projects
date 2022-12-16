@@ -1,0 +1,30 @@
+html{
+    font-family: Monospace;
+}
+
+#tables-container{
+    width: 100%;
+}
+
+
+td{
+    padding: 2px 5px;
+}
+
+#store-table{
+    margin-bottom: 10vh;
+}
+
+#item-table > thead > tr > td{
+    background-color: #532aa5b5;
+    color: white;
+}
+
+#store-table > thead > tr > td{
+    background-color: rgba(165, 42, 42, 0.699);
+    color: white;
+}
+
+#item-table > tbody > tr > td, #store-table > tbody > tr > td{
+    background-color: #8593e6e6;
+}
